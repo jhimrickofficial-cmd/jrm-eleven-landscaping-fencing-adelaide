@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eleven Landscaping | Fencing Adelaide — Modern Outdoor Architectural Living</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with Forms & Container Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              cream: '#faf9f5',
+              surface: '#f3efe6',
+              green: '#132a21',
+              darkgreen: '#0b1c15',
+              forest: '#1a3a2e',
+              lime: '#a3e635',
+              limehover: '#84cc16',
+              sage: '#8eb09b',
+              charcoal: '#141916',
+              muted: '#637068',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    /* Architectural pill-arch matching the HijauDaun hero aesthetic */
+    .hero-arch-mask {
+      clip-path: ellipse(50% 46% at 50% 50%);
+      border-radius: 9999px;
+    }
+    @media (min-width: 768px) {
+      .hero-arch-mask {
+        border-radius: 260px;
+        clip-path: none;
+      }
+    }
+    /* Subtle custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #faf9f5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c9d6ce;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8eb09b;
+    }
+  </style>
+</head>
+<body class="bg-[#faf9f5] text-[#141916] font-sans antialiased selection:bg-[#a3e635] selection:text-[#132a21]">
+<!-- BEGIN: AnnouncementBar -->
+<div class="bg-[#a3e635] text-[#132a21] text-xs md:text-sm font-semibold py-2.5 px-4 sticky top-0 z-50 transition-all duration-300" id="promo-banner">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex-1 text-center font-bold tracking-tight">
+<span>$2,000 OFF ON OUR LANDSCAPING &amp; FENCING PACKAGES THIS MONTH</span>
+<span class="hidden sm:inline-block ml-2 text-xs opacity-75 font-medium">— Adelaide Metro &amp; Hills Region</span>
+</div>
+<button aria-label="Close notification" class="text-[#132a21] hover:opacity-70 p-1 focus:outline-none" onclick="document.getElementById('promo-banner').style.display='none'" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<!-- END: AnnouncementBar -->
+<!-- BEGIN: NavigationBar -->
+<header class="sticky top-0 z-40 w-full transition-all duration-300 ease-out py-5 bg-[#faf9f5]/90 backdrop-blur-md" id="main-nav">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+<!-- Brand Logo -->
+<a aria-label="Eleven Landscaping Adelaide Home" class="flex items-center gap-3 group focus:outline-none" href="#hero">
+<img alt="Eleven Landscaping &amp; Fencing Adelaide Logo" class="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 80' fill='none'&gt;&lt;g&gt;&lt;rect x='8' y='10' width='60' height='60' rx='16' fill='%23132a21'/&gt;&lt;rect x='23' y='22' width='9' height='36' rx='4.5' fill='%23a3e635'/&gt;&lt;rect x='37' y='22' width='9' height='36' rx='4.5' fill='%23f7f6f2'/&gt;&lt;path d='M46 22C46 22 53 28 53 36C53 41 49 45 46 46' stroke='%23a3e635' stroke-width='3' stroke-linecap='round'/&gt;&lt;circle cx='51' cy='19' r='4' fill='%23f59e0b'/&gt;&lt;/g&gt;&lt;text x='82' y='38' font-family='sans-serif' font-size='22' font-weight='900' letter-spacing='-0.5' fill='%23141916'&gt;ELEVEN&lt;/text&gt;&lt;text x='82' y='56' font-family='sans-serif' font-size='11' font-weight='700' letter-spacing='2.8' fill='%232d6a4f'&gt;LANDSCAPING • FENCING ADELAIDE&lt;/text&gt;&lt;/svg&gt;"/>
+</a>
+<!-- Desktop Links -->
+<div class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-[#141916]/80">
+<a class="hover:text-[#132a21] transition-colors py-1" href="#hero">Home</a>
+<a class="hover:text-[#132a21] transition-colors py-1" href="#about">About</a>
+<a class="hover:text-[#132a21] transition-colors py-1" href="#services">Services</a>
+<a class="hover:text-[#132a21] transition-colors py-1" href="#projects">Projects</a>
+<a class="hover:text-[#132a21] transition-colors py-1" href="#process">Process</a>
+<a class="hover:text-[#132a21] transition-colors py-1" href="#reviews">Reviews</a>
+<a class="hover:text-[#132a21] transition-colors py-1" href="#contact">Contact</a>
+</div>
+<!-- Header Action -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-2 text-xs font-semibold text-[#132a21] bg-[#132a21]/5 hover:bg-[#132a21]/10 px-3.5 py-2.5 rounded-full transition-all" href="tel:+61426750723">
+<svg class="w-3.5 h-3.5 text-[#132a21]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          0426 750 723
+        </a>
+<a class="inline-flex items-center justify-center text-xs md:text-sm font-semibold text-[#132a21] bg-white border border-[#141916]/15 hover:border-[#141916]/40 hover:bg-[#faf9f5] px-5 py-2.5 rounded-full shadow-sm transition-all duration-200" href="#contact">
+          Book Consultation
+        </a>
+</div>
+</nav>
+</header>
+<!-- END: NavigationBar -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="pt-8 pb-16 md:pt-14 md:pb-24 px-4 sm:px-6 lg:px-8 text-center" data-purpose="hero-editorial" id="hero">
+<div class="max-w-4xl mx-auto flex flex-col items-center">
+<!-- Adelaide Local Authority Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#132a21]/5 border border-[#132a21]/10 text-xs font-semibold text-[#132a21] mb-6">
+<span class="w-2 h-2 rounded-full bg-[#a3e635]"></span>
+          Licensed Adelaide Landscape Designers &amp; Structural Fencers
+        </div>
+<!-- Headline mirroring HijauDaun layout -->
+<h1 class="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[#141916] leading-[1.08] mb-6">
+          Calm to your <br/>
+<span class="font-normal font-serif italic text-[#132a21]">outdoor space</span>
+</h1>
+<!-- Action CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-8">
+<a class="px-7 py-3 rounded-full text-sm font-bold text-[#132a21] bg-[#a3e635] hover:bg-[#90d624] shadow-sm hover:shadow-md transition-all duration-200" href="#contact">
+            Get a free quote
+          </a>
+<a class="px-7 py-3 rounded-full text-sm font-semibold text-[#141916] bg-transparent border border-[#141916]/25 hover:border-[#141916] hover:bg-[#132a21]/5 transition-all duration-200" href="#services">
+            Explore Services
+          </a>
+</div>
+<!-- Ratings Strip -->
+<div class="flex items-center justify-center gap-2 text-xs sm:text-sm font-medium text-[#141916]/75 mb-3">
+<div class="flex text-amber-500">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div>
+<span class="font-bold text-[#141916]">5.0 Star Rating</span>
+<span class="text-[#141916]/40">·</span>
+<span>Adelaide Google Verified</span>
+</div>
+<p class="text-xs sm:text-sm text-[#141916]/60 font-medium">
+          Free consultation • Eco-conscious approach • Residential &amp; commercial structural fencing
+        </p>
+<!-- Monumental Arched Hero Frame Matching HijauDaun Window Frame -->
+<div class="mt-12 relative w-full max-w-5xl mx-auto">
+<div class="relative overflow-hidden rounded-[40px] md:rounded-[180px] shadow-2xl border-4 border-white/60 bg-[#132a21]/5 aspect-[4/3] md:aspect-[16/9]">
+<img alt="Ultra-realistic commercial architectural photography of luxury Australian residential backyard landscape design and bespoke timber fencing in Adelaide" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpH82bXgXz3LcKAWq4n3gqaM0yp1ea3boQ3uUlykZLyK9Q2CogTmHB54IM_KPncRzKUYJTUTbHVlnsC5Xwyq-pHKDCx_GPOdumuPSU6D_mZEQ2NrLm7ooCOWOD0pWWcsZubcKL-w4N3rl1XQ1c4HnVYbCJeg5GveyzMWf-yzCWOHHZmXuvG14u8mSQkSHG_-MYQHBDdARLCA8oCEAknAzg3l2GohJ5j9qfxMe5We_zuHFIjNj9IcCCwQ"/>
+<!-- Center Floating Interactive Video / Gallery Badge -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="pointer-events-auto inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-md text-white text-xs md:text-sm font-semibold tracking-wide border border-white/30 shadow-lg cursor-pointer transition-all hover:scale-105">
+<span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+<svg class="w-3.5 h-3.5 text-white fill-current ml-0.5" viewbox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+</span>
+                Play Adelaide Portfolio Tour
+              </div>
+</div>
+</div>
+</div>
+<!-- Trust Badges Strip (HijauDaun Logo Cloud) -->
+<div class="mt-16 w-full max-w-4xl mx-auto pt-6 border-t border-[#141916]/10">
+<p class="text-[11px] uppercase tracking-widest text-[#141916]/50 font-semibold mb-6">Accredited Industry Quality &amp; Partnerships</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
+<div class="flex items-center gap-2 font-bold text-sm tracking-tight text-[#132a21]">
+<span class="p-1 rounded bg-[#132a21] text-white text-xs">ML</span> Master Landscapers SA
+            </div>
+<div class="flex items-center gap-2 font-bold text-sm tracking-tight text-[#132a21]">
+<span class="p-1 rounded bg-[#132a21] text-white text-xs">AF</span> Adelaide Fencing Guild
+            </div>
+<div class="flex items-center gap-2 font-bold text-sm tracking-tight text-[#132a21]">
+<span class="p-1 rounded bg-[#132a21] text-white text-xs">ST</span> Sustainable Timber AU
+            </div>
+<div class="flex items-center gap-2 font-bold text-sm tracking-tight text-[#132a21]">
+<span class="p-1 rounded bg-[#132a21] text-white text-xs">NF</span> NativeFlora SA Guild
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: BuiltToLastSection -->
+<section class="py-12 md:py-20 px-4 sm:px-6 lg:px-8" data-purpose="core-value-proposition" id="about">
+<div class="max-w-7xl mx-auto bg-[#132a21] text-white rounded-[32px] md:rounded-[48px] p-8 sm:p-12 lg:p-20 shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Left Content -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<span class="text-xs uppercase tracking-widest font-semibold text-[#a3e635] mb-3 block">Eleven Quality Standard</span>
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4 leading-tight">
+                landscaping built to last. <br/>
+<span class="font-serif italic font-normal text-[#a3e635]">Natural, practical</span>
+</h2>
+<p class="text-white/70 text-sm sm:text-base mb-10 max-w-xl">
+                We combine architectural landscape design with enduring structural timber fencing across metropolitan Adelaide and the Hills. Every project is engineered for the Australian climate.
+              </p>
+</div>
+<!-- Bullet Points with Icons -->
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0 text-[#a3e635]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h3 class="text-base font-bold text-white">Eco-friendly solutions</h3>
+<p class="text-xs sm:text-sm text-white/60 mt-1">We focus on smart drought-tolerant planting, efficient subterranean drip upkeep, and sustainably sourced South Australian timber.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0 text-[#a3e635]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h3 class="text-base font-bold text-white">Detail-driven precision craftsmanship</h3>
+<p class="text-xs sm:text-sm text-white/60 mt-1">Every acoustic fence slat, sandstone paver, retaining sleeper, and soil profile is installed with millimeter laser precision.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0 text-[#a3e635]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<h3 class="text-base font-bold text-white">Clear &amp; punctual communication</h3>
+<p class="text-xs sm:text-sm text-white/60 mt-1">From initial site inspection and council compliance to final handover, you remain informed at every milestone.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Request Landscaping Form Card -->
+<div class="lg:col-span-5 bg-[#0e2119] border border-white/10 p-6 sm:p-8 rounded-[28px] shadow-xl">
+<h3 class="text-xl font-bold text-white tracking-tight">Request landscaping service</h3>
+<p class="text-xs text-white/60 mt-1.5 mb-6">
+              Share your property details and our Adelaide team will follow up within 24 business hours.
+            </p>
+<form action="#contact" class="space-y-4" method="GET">
+<div>
+<label class="block text-xs font-semibold text-white/80 mb-1" for="lead_name">Full name *</label>
+<input class="w-full bg-white/5 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-white/30 focus:border-[#a3e635] focus:ring-1 focus:ring-[#a3e635] outline-none" id="lead_name" placeholder="e.g. Lachlan Murdoch" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-white/80 mb-1" for="lead_email">Email address *</label>
+<input class="w-full bg-white/5 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-white/30 focus:border-[#a3e635] focus:ring-1 focus:ring-[#a3e635] outline-none" id="lead_email" placeholder="lachlan@adelaide.com.au" required="" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-white/80 mb-1" for="lead_phone">Phone number *</label>
+<input class="w-full bg-white/5 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-white/30 focus:border-[#a3e635] focus:ring-1 focus:ring-[#a3e635] outline-none" id="lead_phone" placeholder="+61 400 000 000" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-white/80 mb-1" for="lead_service">Service Required</label>
+<select class="w-full bg-[#132a21] border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white focus:border-[#a3e635] focus:ring-1 focus:ring-[#a3e635] outline-none" id="lead_service">
+<option>Full Garden Landscape &amp; Fencing Package</option>
+<option>Architectural Timber Fencing &amp; Gates</option>
+<option>Hardscaping, Paving &amp; Retaining Walls</option>
+<option>Instant Lawn &amp; Irrigation Setup</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-semibold text-white/80 mb-1" for="lead_msg">Project Details</label>
+<textarea class="w-full bg-white/5 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-white/30 focus:border-[#a3e635] focus:ring-1 focus:ring-[#a3e635] outline-none" id="lead_msg" placeholder="Approx space size, Adelaide suburb, current yard condition..." rows="3"></textarea>
+</div>
+<button class="w-full py-3.5 rounded-xl bg-[#a3e635] text-[#132a21] font-bold text-sm tracking-wide hover:bg-[#8fd920] shadow-md transition-all duration-200 mt-2" type="submit">
+                Get a free quote
+              </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- END: BuiltToLastSection -->
+<!-- BEGIN: ServicesSection -->
+<section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" data-purpose="services-showcase" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Services List Tabs -->
+<div class="lg:col-span-6 space-y-6">
+<div>
+<span class="text-xs uppercase tracking-widest font-semibold text-[#132a21]/60 mb-2 block">Comprehensive Solutions</span>
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-[#141916] leading-tight mb-4">
+                All-in-one landscaping <br/>
+                services for your <br/>
+<span class="font-serif italic font-normal text-[#132a21]">outdoor needs.</span>
+</h2>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-[#141916] bg-white border border-[#141916]/20 hover:border-[#141916] shadow-sm mb-6 transition-all" href="#contact">
+                Book a consultation
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- Interactive Tab Accordion List -->
+<div class="space-y-3">
+<!-- Service 1 (Active) -->
+<div class="p-5 rounded-2xl bg-white border-2 border-[#132a21] shadow-sm transition-all">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#132a21] text-[#a3e635] flex items-center justify-center flex-shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="font-bold text-sm text-[#141916]">Garden design &amp; Masterplanning</h3>
+</div>
+<p class="text-xs text-[#141916]/70 mt-2.5 ml-11 leading-relaxed">
+                  Create a balanced, beautiful outdoor layout with native plant selections, stone pathways, textures, and bespoke outdoor lighting engineered for Adelaide backyards.
+                </p>
+</div>
+<!-- Service 2 -->
+<div class="p-4 rounded-2xl bg-[#faf9f5] border border-[#141916]/10 hover:border-[#132a21]/40 transition-all flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center flex-shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-sm text-[#141916]">Architectural Timber &amp; Acoustic Fencing</h3>
+<p class="text-xs text-[#141916]/60">Bespoke horizontal hardwood slats, acoustic sound walls, Colorbond, and automated driveway gates.</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="p-4 rounded-2xl bg-[#faf9f5] border border-[#141916]/10 hover:border-[#132a21]/40 transition-all flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center flex-shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-sm text-[#141916]">Premium Lawn, Turf &amp; Automatic Irrigation</h3>
+<p class="text-xs text-[#141916]/60">Laser leveling, Sir Walter DNA Certified Buffalo, Kikuyu, and water-wise smart Wi-Fi irrigation controllers.</p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="p-4 rounded-2xl bg-[#faf9f5] border border-[#141916]/10 hover:border-[#132a21]/40 transition-all flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center flex-shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-sm text-[#141916]">Structural Retaining Walls &amp; Sandstone Paving</h3>
+<p class="text-xs text-[#141916]/60">Engineered concrete sleeper retaining walls, natural stone steps, alfresco paving, and poolside tiling.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Organic Arched Visual Frame -->
+<div class="lg:col-span-6 relative">
+<div class="relative overflow-hidden rounded-[36px] shadow-xl border-4 border-white bg-[#132a21]/5 aspect-[4/3] lg:aspect-[5/4]">
+<img alt="Eleven Landscaping craftsman installing contemporary dark timber slat fence and retaining wall in Adelaide residential garden" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVVFiWgeHA51U5bdQtP3dswi7R_0kOEMv7gZvhf7gk616rbMjxswg8EkGsSjtoySf7yFs9pV45d-azxs75IH9n_7tQeFw9dF9NVB63geXYsCjunzPWz286KgWE1pgEuBOiI9aa3av2sl2cVqfub8Bp6EBh7uMPYqC2GRLyRoMfAbJJpVaVSJEZOcssM5n_QS4_nhQmB9fuhEjCDEG9pLS-hJoMq7BsKN4fjT2nx69mDOjI7hX9yr2bhQ"/>
+<div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white/60 shadow-lg flex items-center justify-between">
+<div>
+<p class="text-xs font-bold text-[#141916]">Bespoke Timber Slatting • Adelaide Hills</p>
+<p class="text-[11px] text-[#141916]/60 font-medium">Class 1 Spotted Gum • Marine-grade powdercoated posts</p>
+</div>
+<a class="px-3.5 py-1.5 rounded-full bg-[#132a21] text-white text-xs font-semibold hover:bg-[#1a3a2e] transition-colors" href="#contact">
+                  Inquire
+                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServicesSection -->
+<!-- BEGIN: PortfolioShowcaseSection -->
+<section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-[#f3efe6]" data-purpose="portfolio-gallery" id="projects">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-[#141916] mb-3">
+            Outdoor spaces <br/>
+<span class="font-serif italic font-normal text-[#132a21]">We've helped transform</span>
+</h2>
+<p class="text-xs sm:text-sm text-[#141916]/70">Explore recent residential landscape and fencing projects delivered across South Australia.</p>
+</div>
+<!-- Horizontal Cards matching HijauDaun -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Project 1 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-md bg-white border border-[#141916]/10 flex flex-col">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Adelaide modern garden design with green lawn and timber fencing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGEKpucQXY73210-BKDxbQFvfW5tmZvrHXYnqG9_eBBTnchyzorXh40YU_971ONe55H1C094Ss4CNL3b7HrnZT5WvYStd57UMKrNZKx9nkDTeFKCPb02mRB-ESv3D3DsPG1tfrusVwTRitEg9eLvK-CinfpTu1VjbX603r9ajlgswpWNtwuZAgvypSr7jZmw1V3QLQw7xdISCgWWAthpV8v3yL-n8Ynj5gLjGNwjGEtVL2KKK_ArLDew"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+<span class="font-bold text-sm">Garden Design • Unley</span>
+<span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-[#a3e635] group-hover:text-[#132a21] transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<p class="text-xs text-[#141916]/70">Complete backyard overhaul featuring sandstone stepping pavers, architectural succulents, and integrated mood lighting.</p>
+<span class="text-[11px] font-semibold text-[#132a21] mt-3">Completed in 3 Weeks • Residential</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-md bg-white border border-[#141916]/10 flex flex-col">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Carpenter assembling custom timber slat fencing in Adelaide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm3J32anoRFxthHjVhpjhukh2-GasU26jVtofZLpt3mEChmTAv7B3sJXTMuaJcV25wvCPkEhSzxmJAU2AaWqi1p8CcuuvqtkQsjM0bX7TW8R8APTRX61kYTfp3UMV5cYz0RFAlx1WLxwkyqqm2304KuvWDnIAKqGdFbjE8OG_mHNtaTckoscD-znm-b4JrTnc6bEBtDTIl2j_Wxr2gCxBOJZNtA2Z1Icf6Fd8pyjDevE7ewiTGcO3XaQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+<span class="font-bold text-sm">Front Yard &amp; Timber Refresh • Norwood</span>
+<span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-[#a3e635] group-hover:text-[#132a21] transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<p class="text-xs text-[#141916]/70">Acoustic hardwood boundary fencing with custom matching gate hardware and native drought-hardy perimeter hedging.</p>
+<span class="text-[11px] font-semibold text-[#132a21] mt-3">Completed in 10 Days • Structural Build</span>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative rounded-3xl overflow-hidden shadow-md bg-white border border-[#141916]/10 flex flex-col">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Modern backyard pool landscape and green lawn Adelaide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0QGn5hwDVqnwKdsFHTdktmF4IlXQil7Venoo2HCABpf4fATOCi9ePhYYAeXHqLNcaU_V2aa6JzsbilxPCp-h6QsHn7tA_He3qfkALQp5wQF5bt5cA2P0sYAi389wkISeyj4Z6wYBSHTBsbYLw2NtVczAyO4YvjRWia6VJc4bXeUdEk76qCVFzikyxa1L_bJsItWOFue_icT29FcDKJqOFYPO45HLBrMh1Ea7r5i9HnYcjJqPeGNR-yQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+<span class="font-bold text-sm">Modern Backyard &amp; Pool • Burnside</span>
+<span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-[#a3e635] group-hover:text-[#132a21] transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<p class="text-xs text-[#141916]/70">Lush Sir Walter turf framing architectural sandstone copers, glass pool enclosure, and sunken conversation pit.</p>
+<span class="text-[11px] font-semibold text-[#132a21] mt-3">Completed in 4 Weeks • Full Redesign</span>
+</div>
+</div>
+</div>
+<!-- Controls indicator -->
+<div class="flex items-center justify-center gap-3 mt-10">
+<span class="w-2.5 h-2.5 rounded-full bg-[#132a21]"></span>
+<span class="w-2 h-2 rounded-full bg-[#132a21]/20"></span>
+<span class="w-2 h-2 rounded-full bg-[#132a21]/20"></span>
+</div>
+</div>
+</section>
+<!-- END: PortfolioShowcaseSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" data-purpose="social-proof" id="reviews">
+<div class="max-w-7xl mx-auto bg-[#132a21] text-white rounded-[32px] md:rounded-[48px] p-8 sm:p-12 lg:p-20 shadow-2xl">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4">
+            What clients say about <br/>
+<span class="font-serif italic font-normal text-[#a3e635]">our landscaping work</span>
+</h2>
+<!-- Google Verified Badge -->
+<a class="inline-flex items-center gap-2 bg-white text-[#141916] px-4 py-2 rounded-full text-xs font-semibold shadow hover:bg-neutral-100 transition-colors" href="https://maps.app.goo.gl/WdZ2oU5esu3xzof86" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 text-[#ea4335]" fill="currentColor" viewbox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"></path></svg>
+<span>Consistently rated 5.0/5 by Adelaide Homeowners on Google</span>
+</a>
+</div>
+<!-- Testimonial Cards matching HijauDaun -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-[#0e2119] border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-[#a3e635]">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<span class="text-xs text-white/40 font-mono">Adelaide Hills Project</span>
+</div>
+<p class="text-base sm:text-lg font-medium text-white/90 leading-relaxed mb-6">
+                “Their approach is thoughtful, aligned, and grounded in structural fundamentals. Eleven transformed our sloping block into terraced lawn and gorgeous timber slat screening. Outstanding work.”
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-white/10">
+<div class="w-10 h-10 rounded-full bg-[#a3e635] text-[#132a21] font-bold flex items-center justify-center text-sm">
+                LH
+              </div>
+<div>
+<p class="text-sm font-bold text-white">Liam Hughes</p>
+<p class="text-xs text-white/50">Stirling • Residential Landscape</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-[#0e2119] border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-[#a3e635]">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<span class="text-xs text-white/40 font-mono">Norwood Build</span>
+</div>
+<p class="text-base sm:text-lg font-medium text-white/90 leading-relaxed mb-6">
+                “The team was prompt, polite, and very respectful of our property. From the first phone consultation to the final site cleanup, the quality of both the turf and fence installation is second to none.”
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-white/10">
+<div class="w-10 h-10 rounded-full bg-[#a3e635] text-[#132a21] font-bold flex items-center justify-center text-sm">
+                SJ
+              </div>
+<div>
+<p class="text-sm font-bold text-white">Sarah Jenkins</p>
+<p class="text-xs text-white/50">Norwood • Fencing &amp; Paving</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: ProcessSection -->
+<section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" data-purpose="step-by-step-process" id="process">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-[#141916] mb-3">
+          A simple process from <br/>
+<span class="font-serif italic font-normal text-[#132a21]">First call to finished garden</span>
+</h2>
+<p class="text-xs sm:text-sm text-[#141916]/70 mb-12">No hidden costs, no surprises. Structured project milestones crafted for total peace of mind.</p>
+<!-- Stacked Step Pills matching HijauDaun layout -->
+<div class="space-y-4 text-left">
+<!-- Step 1 -->
+<div class="bg-white rounded-2xl md:rounded-full p-6 md:px-8 md:py-5 border border-[#141916]/10 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center font-bold text-sm">
+                01
+              </div>
+<h3 class="text-base font-bold text-[#141916]">Tell us what you need</h3>
+</div>
+<p class="text-xs md:text-sm text-[#141916]/70 md:max-w-md">
+              Share your aesthetic goals, yard size, budget range, and preferred timeline via call or our simple intake form.
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-white rounded-2xl md:rounded-full p-6 md:px-8 md:py-5 border border-[#141916]/10 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center font-bold text-sm">
+                02
+              </div>
+<h3 class="text-base font-bold text-[#141916]">Get a clear architectural plan</h3>
+</div>
+<p class="text-xs md:text-sm text-[#141916]/70 md:max-w-md">
+              We conduct an on-site Adelaide property inspection, recommend sustainable materials, and provide a fixed-price itemized proposal.
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-white rounded-2xl md:rounded-full p-6 md:px-8 md:py-5 border border-[#141916]/10 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center font-bold text-sm">
+                03
+              </div>
+<h3 class="text-base font-bold text-[#141916]">Enjoy the transformation</h3>
+</div>
+<p class="text-xs md:text-sm text-[#141916]/70 md:max-w-md">
+              Our trade team completes the landscaping &amp; fencing work with precision, leaves the site pristine, and hands over your garden care guide.
+            </p>
+</div>
+</div>
+<!-- Dark Pill CTA Bar matching HijauDaun -->
+<div class="mt-8 bg-[#132a21] text-white rounded-full p-3 pl-6 pr-3 inline-flex flex-wrap items-center justify-between gap-4 shadow-xl">
+<span class="text-xs font-medium">Ready for calmer outdoor living? Book your on-site quote.</span>
+<a class="px-5 py-2.5 rounded-full bg-[#a3e635] text-[#132a21] font-bold text-xs hover:bg-[#8fd920] transition-colors" href="#contact">
+            Book Consultation
+          </a>
+</div>
+</div>
+</section>
+<!-- END: ProcessSection -->
+<!-- BEGIN: ContactAndMapSection -->
+<section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-[#f3efe6]" data-purpose="contact-and-geo-locator" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<span class="text-xs uppercase tracking-widest font-semibold text-[#132a21]/60 mb-2 block">Direct Local Access</span>
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-[#141916] mb-4">
+            Ready to create a garden You'll <br/>
+<span class="font-serif italic font-normal text-[#132a21]">love coming home to?</span>
+</h2>
+<p class="text-xs sm:text-sm text-[#141916]/70">
+            Whether you need a fresh lawn renovation or complete structural timber fencing, Eleven Landscaping is here to build your serene outdoor space.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Contact Details & Business Hours Card -->
+<div class="lg:col-span-5 bg-white p-8 rounded-3xl shadow-sm border border-[#141916]/10 space-y-6">
+<div>
+<h3 class="text-lg font-bold text-[#141916] mb-1">Eleven Landscaping | Fencing Adelaide</h3>
+<p class="text-xs text-[#141916]/60">South Australia Licensed Builder &amp; Landscape Specialist</p>
+</div>
+<div class="space-y-4 text-sm text-[#141916]/80">
+<!-- Phone -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<span class="block text-xs font-semibold text-[#141916]">Direct Phone</span>
+<a class="text-base font-bold text-[#132a21] hover:underline" href="tel:+61426750723">+61 426 750 723</a>
+<p class="text-[11px] text-[#141916]/50">Call or SMS for immediate inquiries</p>
+</div>
+</div>
+<!-- Location -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<span class="block text-xs font-semibold text-[#141916]">Service Area</span>
+<p class="font-medium text-xs">Adelaide, South Australia (All Metro &amp; Adelaide Hills Suburbs)</p>
+</div>
+</div>
+<!-- Operating Hours -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-[#132a21]/5 text-[#132a21] flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<span class="block text-xs font-semibold text-[#141916]">Business Operating Hours</span>
+<ul class="text-xs space-y-1 mt-1 text-[#141916]/70">
+<li class="flex justify-between gap-6"><span class="font-medium">Monday – Friday:</span> <span>6:00 AM – 5:00 PM</span></li>
+<li class="flex justify-between gap-6 text-[#141916]/40"><span>Saturday:</span> <span>Closed</span></li>
+<li class="flex justify-between gap-6 text-[#141916]/40"><span>Sunday:</span> <span>Closed</span></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Direct Google Maps CTA -->
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-[#132a21] text-white text-xs font-bold hover:bg-[#1a3a2e] transition-colors" href="https://maps.app.goo.gl/WdZ2oU5esu3xzof86" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 text-[#a3e635]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              Open Eleven on Google Maps
+            </a>
+</div>
+<!-- Google Maps Interactive Widget Card -->
+<div class="lg:col-span-7 bg-white p-3 rounded-3xl shadow-sm border border-[#141916]/10 overflow-hidden">
+<div class="relative w-full h-[360px] md:h-[420px] rounded-2xl overflow-hidden bg-neutral-100">
+<iframe allowfullscreen="" class="w-full h-full filter saturate-[0.85] contrast-[1.05]" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104764.3808428807!2d138.53037943567702!3d-34.92849890691516!2m3!1f0!2f0!3f0!32m2!1i1024!2i786!4f13.1!3m3!1m2!1s0x6ab0ced23c8a945b%3A0x6a2c206972049d5a!2sAdelaide%20SA!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" style="border:0;" title="Eleven Landscaping Adelaide Location Map" width="100%"></iframe>
+<div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-md border border-neutral-200 pointer-events-none">
+<p class="text-xs font-bold text-[#141916]">Eleven Landscaping • Adelaide HQ</p>
+<p class="text-[10px] text-green-700 font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Open Mon-Fri 6AM-5PM
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ContactAndMapSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#faf9f5] border-t border-[#141916]/10 pt-16 pb-12 px-4 sm:px-6 lg:px-8 text-xs text-[#141916]/70">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+<!-- Footer Column 1: Brand Info -->
+<div class="lg:col-span-2 space-y-4">
+<img alt="Eleven Landscaping Adelaide Logo" class="h-9 w-auto object-contain" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 80' fill='none'&gt;&lt;g&gt;&lt;rect x='8' y='10' width='60' height='60' rx='16' fill='%23132a21'/&gt;&lt;rect x='23' y='22' width='9' height='36' rx='4.5' fill='%23a3e635'/&gt;&lt;rect x='37' y='22' width='9' height='36' rx='4.5' fill='%23f7f6f2'/&gt;&lt;path d='M46 22C46 22 53 28 53 36C53 41 49 45 46 46' stroke='%23a3e635' stroke-width='3' stroke-linecap='round'/&gt;&lt;circle cx='51' cy='19' r='4' fill='%23f59e0b'/&gt;&lt;/g&gt;&lt;text x='82' y='38' font-family='sans-serif' font-size='22' font-weight='900' letter-spacing='-0.5' fill='%23141916'&gt;ELEVEN&lt;/text&gt;&lt;text x='82' y='56' font-family='sans-serif' font-size='11' font-weight='700' letter-spacing='2.8' fill='%232d6a4f'&gt;LANDSCAPING • FENCING ADELAIDE&lt;/text&gt;&lt;/svg&gt;"/>
+<p class="max-w-sm text-xs leading-relaxed text-[#141916]/65">
+            Adelaide’s dedicated landscape design and structural fencing studio. Crafting enduring outdoor sanctuaries with bespoke timber screens, premium turf, and natural stone.
+          </p>
+<div class="pt-2">
+<span class="inline-block text-[11px] font-semibold text-[#132a21]">License SA BLD: 309482 • Fully Insured</span>
+</div>
+</div>
+<!-- Footer Column 2: Navigation Links -->
+<div>
+<h4 class="font-bold text-xs uppercase tracking-wider text-[#141916] mb-4">Navigation</h4>
+<ul class="space-y-2.5">
+<li><a class="hover:text-[#132a21] transition-colors" href="#hero">Home</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#services">Services</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#projects">Project Portfolio</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#process">Our Process</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#reviews">Client Reviews</a></li>
+</ul>
+</div>
+<!-- Footer Column 3: Services -->
+<div>
+<h4 class="font-bold text-xs uppercase tracking-wider text-[#141916] mb-4">Specialties</h4>
+<ul class="space-y-2.5">
+<li><a class="hover:text-[#132a21] transition-colors" href="#services">Garden Architecture</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#services">Designer Timber Fencing</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#services">Acoustic Slat Screens</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#services">Natural Sandstone Paving</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#services">Turf &amp; Smart Irrigation</a></li>
+<li><a class="hover:text-[#132a21] transition-colors" href="#services">Retaining Wall Engineering</a></li>
+</ul>
+</div>
+<!-- Footer Column 4: Contact Summary -->
+<div>
+<h4 class="font-bold text-xs uppercase tracking-wider text-[#141916] mb-4">Adelaide HQ</h4>
+<ul class="space-y-2.5">
+<li><a class="hover:text-[#132a21] font-semibold text-[#132a21]" href="tel:+61426750723">+61 426 750 723</a></li>
+<li><span>Adelaide, SA 5000</span></li>
+<li><span class="block text-[11px] text-[#141916]/50">Mon-Fri: 6:00 AM – 5:00 PM</span></li>
+<li class="pt-2">
+<a class="text-xs font-semibold text-[#132a21] underline" href="https://maps.app.goo.gl/WdZ2oU5esu3xzof86" rel="noopener noreferrer" target="_blank">
+                View on Google Maps →
+              </a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Copyright and Bottom Bar -->
+<div class="pt-8 border-t border-[#141916]/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#141916]/50">
+<p>© 2026 Eleven Landscaping &amp; Fencing Adelaide. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="hover:text-[#141916]" href="#contact">Terms of Service</a>
+<a class="hover:text-[#141916]" href="#contact">Privacy Policy</a>
+<a class="hover:text-[#141916]" href="#contact">Council Compliance</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="parallax-scroll-compression">
+    // Strict Navbar Parallax Compression & Glassmorphic shrink on scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('main-nav');
+      if (window.scrollY > 40) {
+        nav.classList.remove('py-5', 'bg-[#faf9f5]/90');
+        nav.classList.add('py-2.5', 'bg-white/95', 'shadow-sm', 'border-b', 'border-black/5');
+      } else {
+        nav.classList.remove('py-2.5', 'bg-white/95', 'shadow-sm', 'border-b', 'border-black/5');
+        nav.classList.add('py-5', 'bg-[#faf9f5]/90');
+      }
+    });
+
+    // Smooth Scroll with Header Offset Compensation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          const headerOffset = 90;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+</body></html>
